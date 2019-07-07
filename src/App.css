@@ -1,0 +1,73 @@
+.App {
+  background-color: beige;
+  color: black;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.AddIt {
+  background-color: gray;
+  color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+.CompleteIt {
+  background-color: gainsboro;
+  color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+#title-root {
+  background-color: lightcoral;
+  color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+.TheItems {
+  background-color: royalblue;
+  color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+.button-1 {
+  height: 20px;
+  width: 20px;
+  background-color: darkgreen;
+  color: darkgreen;
+}
+.button-2 {
+  height: 20px;
+  width: 20px;
+  background-color: darkgreen;
+  color: darkgreen;
+}
+.button-3 {
+  height: 20px;
+  width: 20px;
+  background-color: darkgreen;
+  color: darkgreen;
+}
+
+/* .CheckIt {
+  background-color: violet;
+  color: black;
+  height: 25vh;
+  width: 100vw;
+} */
+/* .MakeIt {
+  background-color: tomato;
+  color: black;
+  height: 25vh;
+  width: 100vw;
+} */
+/* .ReturnedIt {
+  background-color: slateblue;
+  color: black;
+  height: 25vh;
+  width: 100vw;
+} */
