@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import axios from "axios";
-
 class ToDo extends Component {
   constructor(props) {
     super(props);
@@ -71,14 +70,8 @@ class ToDo extends Component {
     } else if (this.state.editToggle === true) {
       return (
         <div>
-          <input
-            type="text"
-            defaultValue={this.props.nameValue}
-            onKeyPress={this.enter}
-            onChange={e => this.savedUpdatedText(e.target.value)}
-          />
-          <button onClick={() => this.saveText()}>SAVE</button>
-          <button onClick={() => this.deleteToDo()}>REMOVE</button>
+          <button onClick={() => this.saveText()}>Update</button>
+          <button onClick={() => this.deleteToDo()}>Remove</button>
         </div>
       );
     }

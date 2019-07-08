@@ -4,7 +4,12 @@
         "browserslist",
         "component",
         "ctlr",
+        "fontawesome",
+        "fortawesome",
+        "free",
+        "mdbreact",
         "node",
+        "reactstrap",
         "todos",
         "unmount"
     ]

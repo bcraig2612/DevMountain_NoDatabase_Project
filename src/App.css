@@ -1,73 +1,57 @@
 .App {
-  background-color: beige;
-  color: black;
+  background-image:
+    linear-gradient(
+      to right, 
+      #fffdc2,
+      #fffdc2 15%,
+      #d7f0a2 15%,
+      #d7f0a2 85%,
+      #fffdc2 85%
+    );
   height: 100vh;
   width: 100vw;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .AddIt {
-  background-color: gray;
   color: black;
   height: 100vh;
-  width: 100vw;
+  width: 37.5vw;
 }
 
 .CompleteIt {
-  background-color: gainsboro;
   color: black;
-  height: 100vh;
-  width: 100vw;
+  height: 12.5vh;
+  width: 12.5vw;
 }
 
 #title-root {
-  background-color: lightcoral;
-  color: black;
-  height: 100vh;
-  width: 100vw;
+  color: navy;
+  height: 12.5vh;
+  width: 12.5vw;
+  text-shadow:   1px 0px #eee, 0px 1px #ccc,
+               2px 1px #eee, 1px 2px #ccc,
+               3px 2px #eee, 2px 3px #ccc,
+               4px 3px #eee, 3px 4px #ccc,
+               5px 4px #eee, 4px 5px #ccc,
+               6px 5px #eee, 5px 6px #ccc,
+               7px 6px #eee, 6px 7px #ccc,
+               8px 7px #eee, 7px 8px #ccc,
+               8px 8px #eee;
+}
+
+.Counter {
+  font-size: 250px;
+}
+
+.To-DoList {
+  font-size: 72px;
 }
 
 .TheItems {
-  background-color: royalblue;
   color: black;
-  height: 100vh;
-  width: 100vw;
+  height: 37.5vh;
+  width: 37.5vw;
 }
-
-.button-1 {
-  height: 20px;
-  width: 20px;
-  background-color: darkgreen;
-  color: darkgreen;
-}
-.button-2 {
-  height: 20px;
-  width: 20px;
-  background-color: darkgreen;
-  color: darkgreen;
-}
-.button-3 {
-  height: 20px;
-  width: 20px;
-  background-color: darkgreen;
-  color: darkgreen;
-}
-
-/* .CheckIt {
-  background-color: violet;
-  color: black;
-  height: 25vh;
-  width: 100vw;
-} */
-/* .MakeIt {
-  background-color: tomato;
-  color: black;
-  height: 25vh;
-  width: 100vw;
-} */
-/* .ReturnedIt {
-  background-color: slateblue;
-  color: black;
-  height: 25vh;
-  width: 100vw;
-} */
