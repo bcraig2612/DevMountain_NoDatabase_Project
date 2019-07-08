@@ -1,57 +1,9 @@
 .App {
-  background-image:
-    linear-gradient(
-      to right, 
-      #fffdc2,
-      #fffdc2 15%,
-      #d7f0a2 15%,
-      #d7f0a2 85%,
-      #fffdc2 85%
-    );
-  height: 100vh;
-  width: 100vw;
+  background-image: url(https://images.unsplash.com/photo-1547138666-12a241be3c2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.AddIt {
-  color: black;
-  height: 100vh;
-  width: 37.5vw;
-}
-
-.CompleteIt {
-  color: black;
-  height: 12.5vh;
-  width: 12.5vw;
-}
-
-#title-root {
-  color: navy;
-  height: 12.5vh;
-  width: 12.5vw;
-  text-shadow:   1px 0px #eee, 0px 1px #ccc,
-               2px 1px #eee, 1px 2px #ccc,
-               3px 2px #eee, 2px 3px #ccc,
-               4px 3px #eee, 3px 4px #ccc,
-               5px 4px #eee, 4px 5px #ccc,
-               6px 5px #eee, 5px 6px #ccc,
-               7px 6px #eee, 6px 7px #ccc,
-               8px 7px #eee, 7px 8px #ccc,
-               8px 8px #eee;
-}
-
-.Counter {
-  font-size: 250px;
-}
-
-.To-DoList {
-  font-size: 72px;
-}
-
-.TheItems {
-  color: black;
-  height: 37.5vh;
-  width: 37.5vw;
 }

@@ -4,7 +4,7 @@ import "./App.css";
 
 import Title from "./components/Title";
 import ToDoList from "./components/ToDoList";
-import CompleteToDos from "./components/CompleteToDos";
+import CompletedToDos from "./components/CompletedToDos";
 import AddText from "./components/AddText";
 
 class App extends Component {
@@ -12,7 +12,7 @@ class App extends Component {
     super();
     this.state = {
       toDos: [],
-      completedToDos: 0
+      CompletedToDos: 0
     };
 
     this.createToDo = this.createToDo.bind(this);
@@ -38,22 +38,22 @@ class App extends Component {
   updateDeleteList(list) {
     this.setState({
       toDos: list,
-      completedToDos: this.state.completedToDos + 1
+      CompletedToDos: this.state.CompletedToDos + 1
     });
-    console.log(this.state.completedToDos, "BOOM");
+    console.log(this.state.CompletedToDos, "BOOM");
   }
 
   render() {
     return (
       <div className="App">
-        <Title completedToDos={this.state.completedToDos} />
+        <Title/>
+        <CompletedToDos CompletedToDos={this.state.CompletedToDos} />
         <AddText createToDo={this.createToDo} />
         <ToDoList
           toDos={this.state.toDos}
           updateList={this.updateList}
           updateDeleteList={this.updateDeleteList}
         />
-        <CompleteToDos />
       </div>
     );
   }

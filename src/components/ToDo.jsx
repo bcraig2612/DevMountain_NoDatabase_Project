@@ -64,19 +64,18 @@ class ToDo extends Component {
         <div>
           <input type="checkbox" onClick={() => this.deleteToDo()} />
           {this.props.nameValue}
-          <button onClick={() => this.toggle()}>EDIT</button>
+          <button class="btn btn-outline-info btn-sm" onClick={() => this.toggle()} >Edit</button>
         </div>
       );
     } else if (this.state.editToggle === true) {
       return (
         <div>
-          <button onClick={() => this.saveText()}>Update</button>
-          <button onClick={() => this.deleteToDo()}>Remove</button>
+          <button type="button" class="btn btn-outline-success btn-sm" onClick={() => this.saveText()}>Update</button>
+          <button type="button" class="btn btn-outline-danger btn-sm" onClick={() => this.deleteToDo()}>Remove</button>
         </div>
       );
     }
   }
-
   render() {
     return <div> {this.returnedItem()} </div>;
   }

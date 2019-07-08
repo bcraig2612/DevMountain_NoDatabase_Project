@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ToDo from "./ToDo";
+import "./styles/ToDoList.css";
 
 class ToDoList extends Component {
   constructor(props) {
@@ -22,7 +23,7 @@ class ToDoList extends Component {
         />
       );
     });
-    return <div className="TheItems">{listItems}</div>;
+    return <div id="TheTasks">{listItems}</div>;
   }
 }
 

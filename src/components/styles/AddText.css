@@ -1,0 +1,11 @@
+#AddIt {
+  height: 100px;
+  width: 100vw;
+}
+
+.input-box {
+    height: 50px;
+    width: 250px;
+    margin: 40px 10px;
+    font-size: larger;
+  }

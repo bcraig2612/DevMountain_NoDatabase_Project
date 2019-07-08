@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import "./styles/AddText.css";
 
 class AddText extends Component {
   constructor(props) {
@@ -32,9 +33,10 @@ class AddText extends Component {
 
   render() {
     return (
-      <div className="AddIt">
+      <div id="AddIt">
         <input
-          placeholder="Type Your To-Do Here!"
+          className="input-box"
+          placeholder="       Add Your Task Here!"
           onKeyPress={this.enter}
           onChange={e => this.handleText(e.target.value)}
         />

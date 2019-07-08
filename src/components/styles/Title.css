@@ -1,0 +1,12 @@
+#title-root {
+  height: 200px;
+  width: 100vw;
+}
+
+.To-DoList {
+    color: aliceblue;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  margin: 0px 50px;
+}
