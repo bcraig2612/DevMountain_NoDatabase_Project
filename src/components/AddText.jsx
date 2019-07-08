@@ -36,7 +36,7 @@ class AddText extends Component {
       <div id="AddIt">
         <input
           className="input-box"
-          placeholder="       Add Your Task Here!"
+          placeholder="            Add Your Task Here!"
           onKeyPress={this.enter}
           onChange={e => this.handleText(e.target.value)}
         />

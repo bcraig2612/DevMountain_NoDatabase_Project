@@ -7,6 +7,12 @@
     color: aliceblue;
   font-family: "Nunito Sans", sans-serif;
   font-size: 50px;
-  font-weight: 600;
+  text-shadow: 0px 4px 4px #2aabe2; 
   margin: 0px 50px;
+}
+
+img {
+  height: 150px;
+  margin: 60px 490px;  
+
 }

@@ -46,14 +46,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Title/>
-        <CompletedToDos CompletedToDos={this.state.CompletedToDos} />
+        <Title />
         <AddText createToDo={this.createToDo} />
         <ToDoList
           toDos={this.state.toDos}
           updateList={this.updateList}
           updateDeleteList={this.updateDeleteList}
         />
+        <CompletedToDos CompletedToDos={this.state.CompletedToDos} />
       </div>
     );
   }

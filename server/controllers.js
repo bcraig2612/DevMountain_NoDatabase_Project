@@ -9,12 +9,9 @@ module.exports = {
   updateToDo: (req, res) => {
     let toDoIndex = req.body.index;
     toDoListArr.splice(toDoIndex, 1, req.body.toDos);
-    res
-      .status(200)
-      .send(toDoListArr)
-      .catch(err => {
-        res.status(500).send(err);
-      });
+    res.status(200).send(toDoListArr).catch(err => {
+      res.status(500).send(err);
+    });
   },
 
   deleteToDo: (req, res) => {

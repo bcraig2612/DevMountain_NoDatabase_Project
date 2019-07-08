@@ -20,8 +20,7 @@ class ToDo extends Component {
   saveText(props) {
     let saveText = this.state.updatedText;
     this.setState({ savedUpdatedText: saveText });
-    axios
-      .put("/api/update", { toDos: saveText, index: this.props.index })
+    axios.put("/api/update", { toDos: saveText, index: this.props.index })
       .then(res => {
         this.props.updateList(res.data);
       })
@@ -35,14 +34,13 @@ class ToDo extends Component {
   }
 
   deleteToDo(props) {
-    axios
-      .delete("/api/delete", {
-        data: {
-          toDos: this.state.savedUpdatedText,
-          index: this.props.index,
-          id: this.props.id
-        }
-      })
+    axios.delete("/api/delete", {
+      data: {
+        toDos: this.state.savedUpdatedText,
+        index: this.props.index,
+        id: this.props.id
+      }
+    })
       .then(res => {
         this.props.updateDeleteList(res.data);
       });
@@ -58,20 +56,25 @@ class ToDo extends Component {
     }
   };
 
+  onChange = e => {
+    this.setState({ updatedText: e.target.value });
+  };
+
   returnedItem() {
     if (this.state.editToggle === false) {
       return (
         <div>
           <input type="checkbox" onClick={() => this.deleteToDo()} />
           {this.props.nameValue}
-          <button class="btn btn-outline-info btn-sm" onClick={() => this.toggle()} >Edit</button>
+          <button className="btn btn-outline-info btn-sm" onClick={() => this.toggle()} >Edit</button>
         </div>
       );
     } else if (this.state.editToggle === true) {
       return (
         <div>
-          <button type="button" class="btn btn-outline-success btn-sm" onClick={() => this.saveText()}>Update</button>
-          <button type="button" class="btn btn-outline-danger btn-sm" onClick={() => this.deleteToDo()}>Remove</button>
+          <input type="text" value={this.state.updatedText} onChange={this.onChange} />
+          <button type="button" className="btn btn-outline-success btn-large" onClick={() => this.saveText()}>Update</button>
+          <button type="button" className="btn btn-outline-danger btn-large" onClick={() => this.deleteToDo()}>Remove</button>
         </div>
       );
     }
