@@ -9,6 +9,7 @@ class ToDoList extends Component {
   }
 
   render() {
+    let { updateList, updateDeleteList } = this.props;
     let id = 0;
     const listItems = this.props.toDos.map((e, i) => {
       id++;
@@ -18,8 +19,8 @@ class ToDoList extends Component {
           id={id}
           index={i}
           key={i}
-          updateList={this.props.updateList}
-          updateDeleteList={this.props.updateDeleteList}
+          updateList={updateList}
+          updateDeleteList={updateDeleteList}
         />
       );
     });
