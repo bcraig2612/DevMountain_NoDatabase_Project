@@ -3,7 +3,8 @@ import "./styles/CompletedToDos.css";
 
 class CompletedToDos extends Component {
   render() {
-    return <div className="Counter"> Tasks Completed: {this.props.CompletedToDos} </div>
+    let { CompletedToDos } = this.props;
+    return <div className="Counter"> Tasks Completed: {CompletedToDos} </div>
   }
 }
 export default CompletedToDos;

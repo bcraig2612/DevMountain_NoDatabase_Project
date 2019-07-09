@@ -3,13 +3,6 @@ import axios from "axios";
 import "./styles/AddText.css";
 
 class AddText extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      input: "",
-      savedInput: ""
-    };
-  }
 
   handleText(e) {
     this.setState({ input: e });
