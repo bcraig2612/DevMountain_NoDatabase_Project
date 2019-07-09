@@ -15,6 +15,7 @@ module.exports = {
   },
 
   deleteToDo: (req, res) => {
+    console.log("req.body", req.body);
     let toDoIndex = req.body.index;
     toDoListArr.splice(toDoIndex, 1);
     res.status(200).send(toDoListArr);
